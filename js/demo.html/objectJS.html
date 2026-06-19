@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myInfo={
+            name:"Aryan",
+            age:19,
+            isMarried:false,
+            address:{
+                street:4,
+                area:"shastrinagar",
+                pincode:201002,
+                city:"ghaziabad",
+        },
+        course:"btech",
+        branch:"CSE",
+        year:1,
+        education:function(){
+            return console.log("my education is" + myInfo.course+ myInfo.branch+ 
+            myInfo.branch+ "and" + myInfo.year);
+
+        }
+    }
+// console.log(myInfo.education);
+console.log(myInfo.address.city)
+
+
+
+
+// delete object property
+console.log(delete myInfo.name);
+console.log(myInfo);
+//print object's property using for loop
+for( let i=0;i<keys.length;i++){
+console.log( keys[i] +" :")
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //promises : is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
+let mypromises=new Promise(function(resolve , reject){
+    let age=25;
+    if(age>=18){
+        resolve("valid age");
+    }
+    else{
+        reject("wait for the next year");
+     }
+    });
+    mypromises
+.then(result=>console.log(result))
+.catch(error=>console.log(error))
+.finally(console.log("done"));
+ // async await .. and fetching API using try catch
+ //function userData(){
+    
+//try{
+ //   let response=await fetch('https://jsonplaceholder.typicode.com/todos/1');
+   // let responseData=await response.json();
+  //  console.log(responseData)
+//}
+//catch(error){
+ //   console.log(error);
+//}
+
+//}
+
+let num=[2,3,2,3,3];
+let square=num.map(n=>n*2);
+console.log(square);
+//reduce :-....
+let sum=num.reduce((total,n)=>total+n);
+console.log(sum);
+
+let sorting=num.filter(n=)
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Reference or non reference data value types ================
+        //objects {}- valuesare defined in parid of key-value 
+        let myInfo={
+            name= "ARYAN",
+            age="19",
+            mob="9598699063",
+            email="ks9599699063@gmail.com",
+            isMarried:false,
+            address:null,
+            branch:"CSE",
+            section:15
+        }
+        console.log(myInfo);
+        //to find the length of object 
+        console.log( Object.KEYS(myInfo).length);
+        console.log(myInfo.branch);
+        //array - collection of any data types in JS
+        let studentDetail=["Megha",24,false,"megha123@gmail.com","gzb"];
+        console.log(studentDetail[2]);
+        console.log(studentDetail.length);
+
+        for(i=0;i<studentDetail.length;i++){
+            console.log(studentDetail[i]);
+        }
+        //function - block of code i.e.perform particular any task 
+        function myInfo(){
+            let num1=4;
+            let num2=7;
+            let result=num1+num2;
+            console.log("Addition of two number is " +(num1+num2));
+            console.log(result);
+        }
+    </script>
+</body>
+</html>

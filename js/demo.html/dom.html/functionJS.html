@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functionjs</title>
+</head>
+<body>
+    <script>
+        //function- block of code that perform a specific task
+        //normal ,with para ,without para and default 
+       //normal function
+        function demo(){
+            console.log("hello world")
+        } 
+       //with parameters
+function cal(a,b){
+    var num1=a;
+    var num2=b;
+    console.log("addition of two number is" + (num1+num2));
+}
+       //with default
+       function add(a,b=5){
+        var num1=a;
+        var num2=b;
+        var res1=num1+num2;
+        console.log("Addition of two no."+res1);
+       }
+       function mul1(a,b=8){
+        var num1=a;
+        var num2=b;
+        var res2=num1*num2;
+        console.log("multiplication is "+res1);
+       }
+       add(10,23);
+       mul(10,23);
+
+// annonymous function:An anonymous function in JavaScript is a function that does 
+// not have a name or identifier. They are primarily defined using function expressions
+  //or, more commonly, with the concise arrow function syntax introduced in ES6.
+
+let demo1=function(){
+    console.log("hello abes");
+}
+demo1(); 
+//shortest way to write a function i.e arrow. function 
+/* let demo1=()=>{
+ console.log("hello JS");
+}
+ demo1(); */
+ //above function in single line
+ let demo1=()=> console.log
+
+
+//IIFE in JS:n Immediately Invoked Function Expression (IIFE), pronounced "iffy," is a JavaScript function that runs as soon as it is defined. It's a design pattern primarily used to create a private scope for variables, preventing them from polluting the global namespace
+
+
+(function(){
+    console.log("IIFE in JS");
+}) ();
+
+// call back fuction:a function passed as an argument into another function, intended to be executed ("called back") later—either immediately (synchronous) or after an asynchronous operation complete
+// in synchronous 
+function addRes(callback){
+    var num1=5;
+    var num2=7;
+    var res=num1+num2;
+    callback(res)
+}
+function result(res){
+    console.log()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//promises : is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
+let mypromises=new Promise(function(resolve , reject){
+    let age=25;
+    if(age>=18){
+        resolve("valid age");
+    }
+    else{
+        reject("wait for the next year");
+     }
+    });
+    mypromises
+.then(result=>console.log(result))
+.catch(error=>console.log(error))
+.finally(console.log("done"));
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
